@@ -118,6 +118,7 @@ else
 	
 	# 2) Install SERVER-REQUIREMENTS
 	apt-get update
+	apt-get upgrade -y
 	apt-get install apache2 gcc make libxml2-dev autoconf ca-certificates unzip nodejs curl libcurl4-openssl-dev pkg-config libssl-dev screen -y
 	if [ $? != 0 ]; then
 		echo "(LINE 126) There is an error. Are you running apt application somewhere?"
