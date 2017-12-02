@@ -16,6 +16,7 @@ IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,
 	# 2) Install SERVER-REQUIREMENTS
 	apt-get update
 	apt-get upgrade -y
+	apt-get dist-upgrade -y
 	apt-get install apache2 gcc make libxml2-dev php5-curl autoconf ca-certificates unzip curl libcurl4-openssl-dev sudo pkg-config libssl-dev screen libapache2-mod-php5 -y
 	apt-get install mysql-server php5-mysql -y
 	
