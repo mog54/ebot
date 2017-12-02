@@ -249,7 +249,7 @@ service apache2 reload
 
 cd /home/install
 wget https://raw.githubusercontent.com/mog54/ebot-init/master/ebot
-mv ebotv3 /etc/init.d/ebot
+cp ebot /etc/init.d/ebot
 chmod +x /etc/init.d/ebot
 
 /etc/init.d/ebot start
