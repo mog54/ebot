@@ -108,7 +108,7 @@ LO3_METHOD = "restart" ; restart or csay or esl
 KO3_METHOD = "restart" ; restart or csay or esl
 DEMO_DOWNLOAD = true ; true or false :: whether gotv demos will be downloaded from the gameserver after matchend or not
 REMIND_RECORD = false ; true will print the 3x "Remember to record your own POV demos if needed!" messages, false will not
-DAMAGE_REPORT = false ; true will print damage reports at end of round to players, false will not
+DAMAGE_REPORT = true ; true will print damage reports at end of round to players, false will not
 USE_DELAY_END_RECORD = true ; use the tv_delay to record postpone the tv_stoprecord & upload
 
 [MAPS]
@@ -126,7 +126,7 @@ MAP[] = "de_overpass"
 
 [Settings]
 COMMAND_STOP_DISABLED = false
-RECORD_METHOD = "matchstart" ; matchstart or knifestart
+RECORD_METHOD = "knifestart" ; matchstart or knifestart
 DELAY_READY = true' > /home/ebot-csgo/config/config.ini
 
 
