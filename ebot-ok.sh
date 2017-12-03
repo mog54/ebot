@@ -248,10 +248,8 @@ rm -r /home/ebot-web/web/installation/
 	
 service apache2 reload
 
-cd /home/install
-wget https://raw.githubusercontent.com/mog54/ebot-init/master/ebot
-cp ebot /etc/init.d/ebot
-chmod +x /etc/init.d/ebot
+screen -d -m php /home/ebot-csgo/bootstrap.php
+screen -ls
 
-/etc/init.d/ebot start
-/etc/init.d/ebot status
+echo "screen -r pour voir le screen"
+echo "ctrl A + D pour quitter le screen" 
